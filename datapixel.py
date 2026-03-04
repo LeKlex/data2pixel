@@ -35,8 +35,6 @@ Bit order
 This implementation uses LSB-first (least significant bit first) when mapping a byte to pixels:
   bit 0 goes to the leftmost pixel in the 8-pixel group, then bit 1, ... bit 7.
 
-This matches your old script's extraction pattern.
-
 Safety note
 -----------
 PNG must remain lossless and unmodified. Any operation that changes pixel values
