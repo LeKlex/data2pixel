@@ -1,5 +1,6 @@
 # data2pixel
 
+
 `data2pixel` is a simple command-line utility for encoding arbitrary binary data into a black-and-white PNG image and decoding it back again. The tool treats a lossless PNG as a 2‑D bitfield (one bit per pixel) and maps each byte of input to eight horizontal pixels.
 
 ## Features
@@ -56,6 +57,29 @@ python3 datapixel.py --decode --in message.png
 - The image width is always a multiple of eight (eight pixels per byte).
 - No compression is performed beyond PNG's built-in lossless compression.
 - Designed for small-to-moderate files; very large payloads will produce very large images.
+
+## Examples
+
+### 2 Byte
+`X` will be encoded to ![2 Byte text to image](example/out_2B.png "2 Byte text to image")
+
+### 614 Byte
+
+```text
+Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+It has survived not only five centuries, but also the leap into electronic typesetting,
+remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset
+sheets containing Lorem Ipsum passages, and more recently with desktop publishing software
+like Aldus PageMaker including versions of Lorem Ipsum.
+(Created with: https://www.lipsum.com/)
+```
+
+will be encoded to 
+
+![614 Byte text to image](example/out_614B.png "614 Byte text to image")
+
 
 ## License
 
