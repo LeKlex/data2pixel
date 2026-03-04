@@ -80,6 +80,12 @@ will be encoded to
 
 ![614 Byte text to image](example/out_614B.png "614 Byte text to image")
 
+### 8180 Byte
+
+The dummy content of [example/test_8180B.txt](example/test_8180B.txt) will be encoded to
+
+![8180 Byte text to image](example/out_8180B.png "8180 Byte text to image")
+
 
 ## License
 
